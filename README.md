@@ -4,11 +4,13 @@ Personal Arch Linux package repository with custom builds.
 
 ## Packages
 
-- **flameshot-wayland-fix** - Flameshot with QPainter Wayland crash fix
+| Package | Version | Description |
+|---------|---------|-------------|
+| flameshot | 13.3.0-2 | With Wayland QPainter crash fix (PR #4496) |
 
 ## Usage
 
-Add to `/etc/pacman.conf`:
+Add to `/etc/pacman.conf` (before other repos):
 
 ```ini
 [bbj-repo]
@@ -18,9 +20,5 @@ Server = https://raw.githubusercontent.com/benignobjunior/arch-repo/main/x86_64
 
 Then:
 ```bash
-sudo pacman -Sy flameshot-wayland-fix
+sudo pacman -Sy flameshot
 ```
-
-## Note
-
-This is a private repository. Access requires GitHub authentication.
